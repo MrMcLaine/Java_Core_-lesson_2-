@@ -1,36 +1,18 @@
-import lesson4.first.CoffeRobot;
-import lesson4.first.Robot;
-import lesson4.first.RobotCoocker;
-import lesson4.first.RobotDancer;
-import lesson4.second.Animal;
-import lesson5.first.Cat;
-import lesson5.first.Cow;
-import lesson5.first.Dog;
-import lesson5.first.Pet;
-import lesson5.third.Amphibia;
-import lesson5.third.Frog;
+import lesson6.first.FixWageWorker;
+import lesson6.first.HourlyWageWorker;
+import lesson6.second.interface2.MyCalculator;
 
 public class Main {
     public static void main(String[] args) {
-        Pet testCow = new Cow();
-        Pet testCat = new Cat();
-        Pet testDog = new Dog();
+        HourlyWageWorker hourlyWorker = new HourlyWageWorker();
+        FixWageWorker fixWorker = new FixWageWorker();
+        hourlyWorker.salary();
+        fixWorker.salary();
 
-        testCow.voice();
-        testCat.voice();
-        testDog.voice();
-
-        Frog frog = new Frog();
-        Amphibia amphibia = frog;
-
-        frog.eat();
-        frog.sleep();
-        frog.swim();
-        frog.walk();
-
-        amphibia.eat();
-        amphibia.sleep();
-        amphibia.swim();
-        amphibia.walk();
+        MyCalculator calculator = new MyCalculator();
+        System.out.println(calculator.add(50));
+        System.out.println(calculator.subtract(21));
+        System.out.println(calculator.divide(10));
+        System.out.println(calculator.multiply(4));
     }
 }
