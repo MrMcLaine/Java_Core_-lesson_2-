@@ -1,18 +1,21 @@
 import lesson6.first.FixWageWorker;
 import lesson6.first.HourlyWageWorker;
 import lesson6.second.interface2.MyCalculator;
+import lesson7.Plane;
+import lesson7.SU27;
 
 public class Main {
     public static void main(String[] args) {
-        HourlyWageWorker hourlyWorker = new HourlyWageWorker();
-        FixWageWorker fixWorker = new FixWageWorker();
-        hourlyWorker.salary();
-        fixWorker.salary();
-
-        MyCalculator calculator = new MyCalculator();
-        System.out.println(calculator.add(50));
-        System.out.println(calculator.subtract(21));
-        System.out.println(calculator.divide(10));
-        System.out.println(calculator.multiply(4));
+        SU27 newPlane = new SU27(2500, "grey");
+        newPlane.startEngines();
+        newPlane.takeOff();
+        newPlane.up();
+        newPlane.left();
+        newPlane.down();
+        newPlane.right();
+        newPlane.stealthTechnology();
+        newPlane.nuclearStrike();
+        newPlane.turboAcceleration();
+        newPlane.landing();
     }
 }
