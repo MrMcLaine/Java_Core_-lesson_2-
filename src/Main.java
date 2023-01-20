@@ -1,3 +1,4 @@
+import lesson13Video.Student;
 import lesson6.first.FixWageWorker;
 import lesson6.first.HourlyWageWorker;
 import lesson6.second.interface2.MyCalculator;
@@ -9,10 +10,13 @@ import lesson9.WrongInputConsoleParametersException;
 import lesson9.second.Methods;
 import lesson9.second.MyException;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws WrongInputConsoleParametersException, MyException, IllegalAccessException {
+ /*   public static void main(String[] args) throws WrongInputConsoleParametersException, MyException, IllegalAccessException {
         System.out.println("Please, write your month.");
         Scanner console = new Scanner(System.in);
         String month = console.nextLine();
@@ -137,9 +141,9 @@ public class Main {
         }
 
 
-/* - Протестувати всі можливі варіанти, і вивести все на консоль.
+*//* - Протестувати всі можливі варіанти, і вивести все на консоль.
  - Прошу використовувати коментуванняб так як не зміг швидко розібратися,
- як продовжити виконання програми після викидання Exception*/
+ як продовжити виконання програми після викидання Exception*//*
 
         Methods met = new Methods();
         System.out.println(met.addition(15, 35));
@@ -163,5 +167,44 @@ public class Main {
         } catch (MyException e) {
             System.out.println("You have one MyException, bro.");
         }
+    }*/
+
+   public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("John");
+        list.add("Sam");
+        list.add("David");
+        list.add("Vasil");
+        list.add("Mikl");
+        list.add("Jeff");
+
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()){
+            String next = iterator.next();
+            System.out.println("Collection ----- " + next);
+        }
+
+
+        Iterator<String> iterator2 = list.iterator();
+
+        while (iterator2.hasNext()){
+            String next = iterator2.next();
+            if(next.contains("a")) {
+                iterator2.remove();
+            }
+        }
+
+        Iterator<String> iterator3 = list.iterator();
+
+        while (iterator3.hasNext()){
+            String next = iterator3.next();
+            System.out.println("Collection ----- " + next);
+        }
+
+
+
+
+
     }
 }
