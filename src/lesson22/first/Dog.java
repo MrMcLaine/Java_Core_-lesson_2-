@@ -1,8 +1,8 @@
-package lesson5.first;
+package lesson22.first;
 
 public class Dog extends Pet{
     @Override
     public void voice() {
-        System.out.println("I'm dog - Gav, gav");
+        voice.doVoice("I'm dog - Gav, gav");
     }
 }

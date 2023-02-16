@@ -1,4 +1,4 @@
-package lesson5.second;
+package lesson22.second;
 
 public class customClass {
 

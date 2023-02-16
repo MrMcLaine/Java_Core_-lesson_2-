@@ -1,4 +1,4 @@
-package lesson5.first;
+package lesson22.first;
 
 public class Cat extends Pet{
     @Override
